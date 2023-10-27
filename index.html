@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Islamic Gems</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <header class="header">
+        <img class="logo" src="/images/s (1).png" alt="logo">
+
+        <i class="bx bx-menu-alt-left" id="menu-icon" style="color: rgb(7,7,7);"></i>
+
+        <nav class="navbar">
+            <a href="index.html">Jadwal Sholat</a>
+            <a href="asmaul-husna.html">Asmaul Husna</a>
+            <a href="al-quraan.html">Al-Quran</a>
+        </nav>
+
+    </header>
+
+    <section class="awal">
+        <img class="gambar" src="/images/1.gif" alt="photo">
+    </section>
+
+    <!-- kajian -->
+    <section class="islam-day">
+        <h2>For Yours Day</h2>
+        <!-- kajian -->
+        <div class="kajian-container">
+            <div class="kajian">
+                <div class="image">
+                    <img src="/images/ethical-dilemma-illustration_23-2148758813.jpg">
+                    <div class="icon">
+                    </div>
+                </div>
+                <div class="content">
+                    <a href="artikel.html">
+                        <span class="title">
+                            Berbuat baik dalam islam
+                        </span>
+                    </a>
+
+                    <p class="desc">
+                        Renungan
+                    </p>
+
+                    <a class="action" href="artikel.html">
+                        Find out more
+                        <span aria-hidden="true">
+                            →
+                        </span>
+                    </a>
+                </div>
+            </div>
+            <div class="kajian">
+                <div class="image">
+                    <img src="/images/muslim-men-group-together-cartoon_24911-64649.jpg">
+                    <div class="icon">
+                    </div>
+                </div>
+                <div class="content">
+                    <a href="artikel2.html">
+                        <span class="title" style="font-size: 22px;">
+                            Pentingnya Menjaga Akhlak Mulia dalam Kehidupan Sehari-hari
+                        </span>
+                    </a>
+
+                    <p class="desc">
+                        Renungan
+                    </p>
+
+                    <a class="action" href="artikel2.html">
+                        Find out more
+                        <span aria-hidden="true">
+                            →
+                        </span>
+                    </a>
+                </div>
+            </div>
+            <div class="kajian">
+                <div class="image">
+                    <img
+                        src="/images/silhouette-muslim-man-praying-old-mosque-phra-nakhon-si-ayutthaya-province-asia-muslim_369024-816.jpg">
+                    <div class="icon">
+                    </div>
+                </div>
+                <div class="content">
+                    <a href="artikel3.html">
+                        <span class="title" style="font-size: 26px;">
+                            Keutamaan Taubat dalam Islam
+                        </span>
+                    </a>
+
+                    <p class="desc">
+                        Ilmu
+                    </p>
+
+                    <a class="action" href="artikel3.html">
+                        Find out more
+                        <span aria-hidden="true">
+                            →
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- kajian -->
+
+    <section class="jadwal-sholat">
+        <div class="container">
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="title">Jadwal Sholat</h5>
+                    <div class="lokasi">
+                        <p>Kota/Lokasi: <strong id="city"></strong></p>
+                        <p>Provinsi/Daerah: <strong id="prov"></strong></p>
+                    </div>
+                </div>
+
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead class="table-primary">
+                                <tr>
+                                    <th class="th1">Tanggal</th>
+                                    <th>Imsak</th>
+                                    <th>Subuh</th>
+                                    <th>Terbit</th>
+                                    <th>Dzuhur</th>
+                                    <th>Ashar</th>
+                                    <th>Maghrib</th>
+                                    <th>Isya</th>
+                                </tr>
+                            </thead>
+                            <tbody id="list-jadwal"></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
