@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Islamic Gems</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
@@ -24,14 +23,10 @@
 
     </header>
 
-    <section class="awal" >
+    <section class="awal">
         <img class="gambar" src="images/2.gif" alt="photo">
     </section>
 
-    <div id="result" data-aos="fade-up"
-    data-aos-anchor-placement="bottom-bottom">
-
-    </div>
     <script>
         window.onload = function () {
             getDataSurat();
@@ -88,7 +83,7 @@
                 ayatSurat.classList.add("ayat");
 
                 let artiSurat = document.createElement("p");
-                artiSurat.innerHTML = "Artinya " + surat.arti;
+                artiSurat.innerHTML = "The meaning: " + surat.arti;
                 artiSurat.classList.add("arti");
 
                 let value = document.createElement("p");
@@ -102,7 +97,7 @@
                 putihDiv.appendChild(arabSurat);
                 putihDiv.appendChild(artiSurat);
                 putihDiv.appendChild(value);
-                putihDiv.appendChild(ayatSurat)
+                putihDiv.appendChild(ayatSurat);
 
                 resultDiv.appendChild(suratDiv);
             });

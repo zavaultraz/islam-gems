@@ -1,5 +1,3 @@
-//..slid
-//
 
 const city = 1301;
 const date = new Date();
