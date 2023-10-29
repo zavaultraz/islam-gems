@@ -52,7 +52,15 @@ header {
     font-size: 1rem;
     font-weight: 500;
     margin-right: 2rem;
+    transition: color 0.3s, font-size 0.3s;
 }
+
+
+.navbar a:hover {
+    color: #D0A933; /* Ubah warna saat dihover */
+    font-size: 1.3rem; /* Ubah ukuran teks saat dihover */
+}
+
 
 .button {
     display: inline-block;
@@ -93,8 +101,15 @@ header {
     margin-left: 5rem;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
+transition: 0.3s, transform 0.3s;
 }
 
+
+
+.kajian:hover {
+transform: scale(1.1);
+}
 .kajian {
     max-width: 300px;
     border-radius: 0.5rem;
@@ -103,15 +118,19 @@ header {
     border: 1px solid transparent;
     margin: 10px 5px 7px 5px;
     height: 400px;
-
+    cursor: pointer;
+transition: 0.3s, transform 0.3s;
 }
 
+
 .kajian a {
-    text-decoration: none
+    text-decoration: none;
+
 }
 
 .content {
     padding: 1.1rem;
+    color: #132043;
 }
 
 .image img {
@@ -156,6 +175,7 @@ header {
 .action:hover span {
     transform: translateX(4px);
 }
+
 
 /* Jadwal sholat */
 
