@@ -12,20 +12,19 @@
 <body>
     <header class="header">
         <img class="logo" src="images/s (1).png" alt="logo">
-
-        <i class="bx bx-menu-alt-left" id="menu-icon" style="color: rgb(7,7,7);"></i>
-
+        <i class="bx bx-menu-alt-left" id="menu-icon" style="color: rgb(7, 7, 7);"></i>
         <nav class="navbar">
             <a href="index.html">Jadwal Sholat</a>
             <a href="asmaul-husna.html">Asmaul Husna</a>
             <a href="al-quraan.html">Al-Quran</a>
         </nav>
-
     </header>
 
     <section class="awal">
         <img class="gambar" src="images/2.gif" alt="photo">
     </section>
+
+    <div id="result"></div> <!-- Add an ID to the div you want to target in your JavaScript -->
 
     <script>
         window.onload = function () {
@@ -36,7 +35,7 @@
             fetch('https://api.banghasan.com/quran/format/json/surat')
                 .then(function (response) {
                     if (!response.ok) {
-                        throw new Error('gagal mengambil data')
+                        throw new Error('gagal mengambil data');
                     }
                     return response.json();
                 })
@@ -46,7 +45,7 @@
                 })
                 .catch(function (error) {
                     console.log('terjadi kesalahan', error);
-                })
+                });
         }
 
         function displayData(data) {
@@ -68,8 +67,7 @@
                 namaSurat.innerHTML = surat.nama;
                 namaSurat.classList.add("nama");
 
-                let gambar = document.createElement("save");
-                gambar.classList.add("save");
+
 
                 let putihDiv = document.createElement("div");
                 putihDiv.classList.add("sukses");
@@ -92,7 +90,6 @@
                 suratDiv.appendChild(abuDiv);
                 abuDiv.appendChild(nomerSurat);
                 abuDiv.appendChild(namaSurat);
-                abuDiv.appendChild(gambar);
                 suratDiv.appendChild(putihDiv);
                 putihDiv.appendChild(arabSurat);
                 putihDiv.appendChild(artiSurat);
